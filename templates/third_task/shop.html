@@ -1,0 +1,12 @@
+<html>
+<body>
+    <h1>Магазин</h1>
+    <ul>
+        {% for item in items %}
+            <li>{{ item }} <button>Купить</button></li>
+        {% endfor %}
+    </ul>
+    <a href="{% url 'index' %}"><button>На главную</button></a>
+</body>
+</html>
+
